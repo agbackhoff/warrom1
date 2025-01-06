@@ -4,4 +4,6 @@ services:
   python-app:
     build: .
     volumes:
-      - ./output.txt:/app/output.txt 
+      - ./output.txt:/app/output.txt
+    # Asegurar que el contenedor tiene permisos de escritura
+    user: "1000:1000" 

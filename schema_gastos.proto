@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+message Gastos {
+    // Información de subbloque
+    string nombre_subbloque = 1;
+    string nombre_subbloque_en = 2;
+
+    // Información de moneda
+    int32 cla_moneda = 3;
+    string nombre_moneda = 4;
+    int32 cla_moneda_asiento = 5;
+    string nombre_moneda_asiento = 6;
+
+    // Información de póliza
+    int32 cla_estatus_poliza = 7;
+    string nombre_estatus_poliza = 8;
+    int32 cla_tipo_afectacion = 9;
+    string nombre_tipo_afectacion = 10;
+
+    // Información de personal
+    int32 cla_trabajador = 11;
+    string nombre_trabajador = 12;
+    int32 cla_usuario_tramita = 13;
+    string nombre_usuario_tramita = 14;
+
+    // Información de gasto
+    int32 cla_tipo_gasto_familia = 15;
+    string nombre_tipo_gasto_familia = 16;
+
+    // IDs de referencia
+    int32 id_pedido = 17;
+    int32 id_renglon_poliza = 18;
+    int32 id_proyecto = 19;
+    int32 id_tramite = 20;
+    int32 id_poliza = 21;
+    int32 id_poliza_origen = 22;
+    int32 id_poliza_deudor = 23;
+    int32 id_renglon_deudor = 24;
+
+    // Flags y fechas
+    int32 es_filial = 25;
+    string fecha_elaboracion = 26;
+    string fecha_pago_real = 27;
+
+    // Tipos de cambio
+    double tipo_cambio_encabezado = 28;
+    double tipo_cambio_detalle = 29;
+
+    // Información adicional
+    int32 num_entrada = 30;
+    string descripcion_encabezado = 31;
+    string descripcion_detalle = 32;
+    int32 tasa_iva = 33;
+
+    // Importes
+    double importe_cargo_mxn = 34;
+    double importe_cargo_usd = 35;
+    double importe_credito_mxn = 36;
+    double importe_credito_usd = 37;
+    double importe_moneda_original = 38;
+    double presupuesto_mn = 39;
+    double presupuesto_usd = 40;
+} 
